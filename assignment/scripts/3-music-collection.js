@@ -29,5 +29,21 @@ console.log(addToCollection("Innervisions", "Stevie Wonder", 1974));
 console.log(addToCollection("Songs in the Key of Life", "Stevie Wonder", 1976));
 console.log(addToCollection("Doggystyle", "Snoop Dogg", 1994));
 
-// testing if function adds to collection
+// testing if addToCollection function adds to collection
 console.log(collection);
+
+
+//~~~~~ showCollection Function
+
+function showCollection(array){
+    console.log("The array length is:", array.length);
+    for (item of array){
+        console.log(`${item.title} by ${item.artist}, published in ${item.yearPublished}`);
+    }
+}
+
+
+//~~~~~~tesing showCollection function
+
+console.log("this is a test of showCollection:");
+showCollection(collection);
