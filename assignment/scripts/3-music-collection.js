@@ -70,7 +70,10 @@ function findByArtist(searchedArtist){
 // ~~~~~~ test findByArtist function:
 
 console.log('This is a test of findByArtist')
-findByArtist("Wilco");
-findByArtist("Metallica");
-find
+console.log(`Testing one match: ${findByArtist("Wilco")}`);
+console.log(`Testing no matches: ${findByArtist("Metallica")}`);
+console.log(`Testing two matches: ${findByArtist("Stevie Wonder")}`);
 
+console.log("Testing one match: ",findByArtist("Wilco"));
+console.log("Testing no matches: ",findByArtist("Metallica"));
+console.log("Testing two matches: ",findByArtist("Stevie Wonder"));
