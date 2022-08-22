@@ -47,3 +47,30 @@ function showCollection(array){
 
 console.log("this is a test of showCollection:");
 showCollection(collection);
+
+
+
+// ~~~~~~~ findByArtist function
+
+function findByArtist(searchedArtist){
+    let searchResults = [];
+
+    for(let i=0; i<collection.length; i++ ){
+        itemArtist = collection[i].artist;
+        
+        if(itemArtist === searchedArtist){
+            searchResults.push(collection[i]);
+        }
+    }
+    
+    return searchResults
+}
+
+
+// ~~~~~~ test findByArtist function:
+
+console.log('This is a test of findByArtist')
+findByArtist("Wilco");
+findByArtist("Metallica");
+find
+
